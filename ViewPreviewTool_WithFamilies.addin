@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>View Preview Tool (Family Support)</Name>
+    <Assembly>ViewPreviewTool_WithFamilies.dll</Assembly>
+    <FullClassName>ViewPreviewTool.ViewPreviewApplication</FullClassName>
+    <ClientId>3D7C5E5D-F8B2-4A6E-B9A1-7E8C9D4F3B2B</ClientId>
+    <VendorId>BIM_Ops_Studio</VendorId>
+    <VendorDescription>BIM Ops Studio - Professional Tools</VendorDescription>
+    <Description>Preview tool for views AND families in the Project Browser - v1.2 with Family Support</Description>
+  </AddIn>
+</RevitAddIns>

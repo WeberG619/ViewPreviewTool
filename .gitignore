@@ -1,0 +1,27 @@
+# Build outputs
+bin/
+obj/
+*.pdb
+*.cache
+*.log
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+*.vspscc
+*.vssscc
+
+# Temporary files
+*.tmp
+*.temp
+~*
+*.bak
+
+# Keep only working versions
+!WORKING_VERSIONS/
+!WORKING_VERSIONS/**/*
