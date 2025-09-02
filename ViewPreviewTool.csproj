@@ -1,24 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
-    <OutputType>Library</OutputType>
-    <PlatformTarget>x64</PlatformTarget>
-    <Platforms>x64</Platforms>
-    <AssemblyName>ViewPreviewTool</AssemblyName>
     <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ViewPreviewTool</AssemblyName>
+    <RootNamespace>ViewPreviewTool</RootNamespace>
     <LangVersion>latest</LangVersion>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
-  
+
   <ItemGroup>
-    <Reference Include="RevitAPI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2025\RevitAPI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIUI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2025\RevitAPIUI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    <PackageReference Include="Autodesk.Revit.SDK" Version="2025.0.2.419" PrivateAssets="all" />
   </ItemGroup>
-  
+
+  <ItemGroup>
+    <Compile Remove="temp_backup\**" />
+    <EmbeddedResource Remove="temp_backup\**" />
+    <None Remove="temp_backup\**" />
+    <Compile Remove="temp_cs_files\**" />
+    <EmbeddedResource Remove="temp_cs_files\**" />
+    <None Remove="temp_cs_files\**" />
+    <Compile Remove="temp_backup_2\**" />
+    <EmbeddedResource Remove="temp_backup_2\**" />
+    <None Remove="temp_backup_2\**" />
+    <Compile Remove="ViewPreviewTool_*.cs" />
+    <Compile Remove="*_BACKUP_*.cs" />
+  </ItemGroup>
 </Project>

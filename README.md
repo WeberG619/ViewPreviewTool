@@ -1,14 +1,14 @@
-# View Preview Tool for Revit 2025
+# View Preview Tool for Revit 2025 (CLICK-based)
 
-A Revit add-in that shows view previews when hovering over view names in the Project Browser.
+A Revit add-in that shows view previews when you CLICK the View Preview button after selecting a view in the Project Browser.
 
 ## Features
 
-- **Hover Preview**: Shows a thumbnail preview of views when hovering over them in the Project Browser
-- **View Information**: Displays view name and type in the preview
-- **Toggle Control**: Ribbon button to enable/disable the preview feature
-- **Smart Positioning**: Preview appears near cursor with automatic positioning
-- **Performance**: 500ms delay before showing preview to avoid accidental triggers
+- **Click-based Preview**: Select a view in Project Browser, then CLICK the button to see preview (NOT hover)
+- **View Information**: Displays view name in the preview window
+- **Professional UI**: 700x800 pixel preview window with proper panels
+- **Smart Positioning**: Preview appears to the LEFT of Project Browser
+- **One-Click Operation**: Simple click-based workflow
 
 ## Installation
 
@@ -24,15 +24,15 @@ A Revit add-in that shows view previews when hovering over view names in the Pro
 
 3. **Start Revit**:
    - Launch Revit 2025
-   - Look for "Toggle Preview" button in the "View Tools" panel
+   - Look for "View Preview" button in the Add-ins tab
 
 ## Usage
 
-1. Click the "Toggle Preview" button in the ribbon to enable the feature
-2. Hover over any view name in the Project Browser
-3. After a short delay (500ms), a preview popup will appear
-4. Move your cursor away or click to dismiss the preview
-5. Click the toggle button again to disable the feature
+1. Select a view in the Project Browser by clicking on it
+2. Click the "View Preview" button in the Add-ins tab
+3. A preview window will appear on the LEFT side showing the selected view
+4. Close the preview window when done
+5. Repeat: Select view → Click button → See preview
 
 ## Requirements
 
